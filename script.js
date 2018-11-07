@@ -1,10 +1,15 @@
 var video_lists = [1,2,3,4,5,6,7,8,9];
+var quality = {
+	high: '',
+	low: '_0',
+	medium: ''
+};
 xhr = {url: []};
 
 function get_videos(filename){
 	if(!filename) filename = 1;
 	$.ajax({
-        url: 'video/' + filename + '.mp4',
+        url: 'video/' + filename + quality.low + '.mp4',
 		xhrFields: {
             responseType: 'blob'
         },
