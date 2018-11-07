@@ -9,7 +9,7 @@ xhr = {url: []};
 function get_videos(filename){
 	if(!filename) filename = 1;
 	$.ajax({
-        url: 'video/' + filename + quality.low + '.mp4',
+        url: 'video/' + filename + quality.medium + '.mp4',
 		xhrFields: {
             responseType: 'blob'
         },
