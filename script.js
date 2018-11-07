@@ -45,14 +45,14 @@ function get_videos(filename){
 	
 }
 
-
+get_videos(1);
 
 
 $(document).ready(function(){
 	
 	
 	
-	get_videos(1);
+	
 	
 	
     var myVid = document.getElementById("video_play");
