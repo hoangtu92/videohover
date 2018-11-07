@@ -45,7 +45,10 @@ function get_videos(filename){
 	
 }
 
-get_videos(1);
+for(var i=1; i<= video_lists.length; i++){
+	get_videos(i);
+}
+
 
 
 $(document).ready(function(){
