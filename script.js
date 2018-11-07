@@ -39,7 +39,7 @@ function get_videos(filename){
 		   
         },
 		complete: function(){
-			if(filename <= 9 ) get_videos(filename+1);
+			if(filename < 9 ) get_videos(filename+1);
 		}
     });
 	
