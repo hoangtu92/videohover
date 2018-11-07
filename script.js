@@ -4,7 +4,19 @@ var quality = {
 	low: '_0',
 	medium: '_1'
 };
+var myVid = document.getElementById("video_play");
 xhr = {url: []};
+
+
+function setVideoPosition(){
+	var docWidth = window.innerWidth,
+		containerWidth = $('.gs-container').width(),
+		contentWidth = $('.content__article-body').width();
+		
+	var sidebarWidth = (docWidth - containerWidth)/2 + ((containerWidth-contentWidth)/2 - 300)/2;
+	
+	if(sidebarWidth > 0) myVid.style.right = sidebarWidth + 'px';
+}
 
 function get_videos(filename){
 	if(!filename) filename = 1;
@@ -54,22 +66,13 @@ for(var i=0; i< video_lists.length; i++){
 
 
 
+$(window).resize(function(e){
+	setVideoPosition();
+});
+
 $(document).ready(function(){
 	
-	console.log(xhr);
-	
-	
-    var myVid = document.getElementById("video_play");
-	
-	var docWidth = window.innerWidth,
-		docHeight = window.innerHeight,
-		containerWidth = $('.gs-container').width(),
-		contentWidth = $('.content__article-body').width();
-		
-	var sidebarWidth = (docWidth - containerWidth)/2 + ((containerWidth-contentWidth)/2 - 300)/2;
-	
-	console.log(sidebarWidth);
-	if(sidebarWidth > 0) myVid.style.right = sidebarWidth + 'px';
+	setVideoPosition();
 	
    $(".q-1").mouseover(function(){
          
