@@ -65,7 +65,7 @@ $(document).ready(function(){
 		containerWidth = $('.gs-container').width(),
 		contentWidth = $('.content__article-body').width();
 		
-	var sidebarWidth = (docWidth - containerWidth)/2 + ((containerWidth-contentWidth)/2 - 150);
+	var sidebarWidth = (docWidth - containerWidth)/2 + ((containerWidth-contentWidth)/2 - 300)/2;
 	
 	console.log(sidebarWidth);
 	if(sidebarWidth > 0) myVid.style.right = sidebarWidth + 'px';
