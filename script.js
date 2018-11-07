@@ -56,7 +56,7 @@ for(var i=0; i< video_lists.length; i++){
 
 $(document).ready(function(){
 	
-	
+	console.log(xhr);
 	
 	
     var myVid = document.getElementById("video_play");
