@@ -1,0 +1,46 @@
+.ad-image{
+    margin-top: 3rem;
+    background-image: url(video/ad1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 264px;
+}
+
+.q-1:hover, .q-2:hover, .q-3:hover, .q-4:hover, .q-5:hover, .q-6:hover, .q-7:hover, .q-8:hover, .q-9:hover{
+    
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+/*    font-size: 1.3em;*/
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    font-weight: bold;
+}
+
+.q-1,.q-2,.q-3,.q-4,.q-5,.q-6,.q-7,.q-8,.q-9{
+    
+    -webkit-transition: 1s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: inherit;
+    display: inline-block;
+    font-size: 1.1em;
+  color: #228DFF;
+  font-family: Iceland;
+}
+
+#video{
+        position: relative;
+    top: 50rem;
+    width: 100%;
+    right: 1rem;}
+
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
