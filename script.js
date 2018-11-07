@@ -62,10 +62,12 @@ $(document).ready(function(){
 	
 	var docWidth = window.innerWidth,
 		docHeight = window.innerHeight,
-		containerWidth = $('.content__main-column').width(),
-		contentWidth = $('.content__article-body').width();;
+		containerWidth = $('.gs-container').width(),
+		contentWidth = $('.content__article-body').width();
 		
 	var sidebarWidth = (containerWidth - contentWidth)/2;
+	
+	console.log(sidebarWidth);
 	if(sidebarWidth > 0) myVid.style.right = sidebarWidth + 'px';
 	
    $(".q-1").mouseover(function(){
