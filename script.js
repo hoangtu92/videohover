@@ -42,8 +42,8 @@ function get_videos(filename){
 	
 }
 
-for(var i=1; i<= video_lists.length; i++){
-	get_videos(i);
+for(var i=0; i< video_lists.length; i++){
+	get_videos(video_lists[i]);
 }
 
 
