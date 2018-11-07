@@ -36,10 +36,10 @@
 }
 #video video{
 	position: fixed;
-	width: 300px;
-	height: auto;
-	top: 50%;
-	right: 10%;
+    width: 300px !important;
+    height: auto;
+    top: calc(50% - 80px);
+    right: 10%;
 }
 
 
