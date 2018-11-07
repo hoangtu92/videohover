@@ -48,6 +48,7 @@ function get_videos(filename){
 }
 
 for(var i=0; i< video_lists.length; i++){
+	xhr.url[video_lists[i]] = 'video/' + video_lists[i] + quality.low + '.mp4'
 	get_videos(video_lists[i]);
 }
 
