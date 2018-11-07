@@ -37,10 +37,7 @@ function get_videos(filename){
   
 			reader.readAsDataURL(data);
 		   
-        },
-		complete: function(){
-			if(filename < 9 ) get_videos(filename+1);
-		}
+        }
     });
 	
 }
